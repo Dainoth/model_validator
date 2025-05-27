@@ -1,3 +1,4 @@
+import bpy
 from . import panels
 
 _modules = [

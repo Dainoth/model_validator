@@ -1,3 +1,4 @@
+import bpy
 from . import custom_props
 
 _modules = [

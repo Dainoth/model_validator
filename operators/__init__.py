@@ -1,7 +1,9 @@
-from . import basic_ops
+import bpy
+from . import basic_ops, import_ops
 
 _modules = [
-    basic_ops
+    basic_ops,
+    import_ops
 ]
 
 def register():
