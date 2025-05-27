@@ -11,14 +11,19 @@ bl_info = {
 }
 
 import bpy
+from . import ui, operators, properties
 
 
 def register():
-    pass  # Здесь будет код регистрации вашего аддона
+    properties.register()
+    operators.register()
+    ui.register()
 
 
 def unregister():
-    pass  # Здесь будет код удаления вашего аддона
+    properties.unregister()
+    operators.unregister()
+    ui.unregister()
 
 
 if __name__ == "__main__":
