@@ -4,24 +4,22 @@ bl_info = {
     "version": (1, 0),
     "blender": (4, 4, 0),
     "location": "View3D > Sidebar",
-    "description": "Modular addon with separated functionality",
+    "description": "Verification of models of architectural and urban planning solutions based on the relevant requirements to the parameters of high-polygonal models and low-polygonal models of objects placed in electronic form in the information systems of the city of Moscow.",
     "warning": "",
     "doc_url": "",
     "category": "3D View",
 }
 
 import bpy
-from . import operators, ui, properties, utilities
+
 
 def register():
-    properties.register()
-    operators.register()
-    ui.register()
-    
+    pass  # Здесь будет код регистрации вашего аддона
+
+
 def unregister():
-    ui.unregister()
-    operators.unregister()
-    properties.unregister()
+    pass  # Здесь будет код удаления вашего аддона
+
 
 if __name__ == "__main__":
     register()
